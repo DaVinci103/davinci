@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>davinci - DV103</title>
+  <link rel="stylesheet" href="style.css">
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <p><b>NOTE: This page is still a work in progress</b></p>
+
+  <h1>Introduction</h1>
+
+  <p>Googology is the study of large numbers. One of the goals of googology is to create the largest number ever, which I'll attempt to do here. Rayo's number has been considered the largest number ever created, its definition is: the smallest number larger than any natural number that can be defined in a googol symbols or less in the language of first order set theory. Rayo's number was later beaten by various number, including large number garden number (LNGN), which is the largest number at the time of writing. LNGN extends the set theoretic universe to a higher order universe and builds a hierarchy of universes where each step in that hierarchy forms a model of \(\text{ZFC}\) that includes the previous universe. My number will be defined in a non-recursive theory diagonalizing over all recursive extensions of \(\text{ZFC}\), this includes the theory in which LNGN is defined.</p>
+
+  <p>I'll work in \(\text{ZFC}\) set theory.</p>
+
+  <h1>Language</h1>
+
+  <p>In this chapter, I'll define the mathematical languages which the recursive theories will use. Let</p>
+
+\[\begin{array}{lcr}
+\ulcorner ( \urcorner & := & 0 \\
+\ulcorner ) \urcorner & := & 1 \\
+\ulcorner x \urcorner & := & 2 \\
+\ulcorner \neg \urcorner & := & 3 \\
+\ulcorner { \to } \urcorner & := & 4 \\
+\ulcorner \forall \urcorner & := & 5 \\
+\ulcorner { \in } \urcorner & := & 6
+\end{array}\]
+
+  <p>And let \(\ulcorner n \urcorner := n\) for \(n &lt; \omega\). I'll abbreviate the tuple \((\ulcorner a_0 \urcorner, \cdots, \ulcorner a_n \urcorner)\) for positive natural \(n\) as \(\ulcorner a_0 \cdots a_n \urcorner\), e.g. \(\ulcorner x 0 \in x 1 \urcorner = (\ulcorner x \urcorner, \ulcorner 0 \urcorner, \ulcorner { \in } \urcorner, \ulcorner x \urcorner, \ulcorner 1 \urcorner) = (2, 0, 6, 2, 1)\). I'll call a member of \(\omega^{<\omega}\), i.e. a finite sequence of natural numbers, a "string". Let</p>
+
+\[\begin{array}{rrcl}
+\mathfrak{L}_{\in}(\cdot) : & [\omega \smallsetminus 7]^{<\omega} \times \left ( \sum_A^{[\omega \setminus 7]^{<\omega}} A \to \omega \right )^2 & \to & \mathcal{P}(\omega^{<\omega}) \\
+& (\vec{C}, \vec{R}, \text{arity}_R, \vec{F}, \text{arity}_F) & \mapsto & \mathfrak{L}_{\in}(\vec{C}, \vec{R}, \text{arity}_R, \vec{F}, \text{arity}_F)
+\end{array}\]
+
+  <p>Be a mapping from quintuples consisting of a finite sets of natural numbers \(\ge 7\), \(\vec{C}\), a finite set of natural numbers \(\ge 7\), \(\vec{R}\), a mapping from \(\vec{R}\) to natural numbers, \(\text{arity}_R\), a finite set of natural numbers \(\ge 7\), \(\vec{F}\) and a mapping from \(\vec{F}\) to natural numbers, \(\text{arity}_F\) to sets of strings. [WIP]</p>
+</body>
+</html>
